@@ -1,4 +1,4 @@
-export const teams: any=  (event, _context) => {
+export const test: any=  (event, _context) => {
     return {
       statusCode: 200,
       body: JSON.stringify({

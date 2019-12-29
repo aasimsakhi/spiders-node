@@ -12,7 +12,7 @@ plugins:
 provider:
   name: aws
   runtime: nodejs10.x
-
+       
 functions:
   hello:
     handler: handler.hello
@@ -20,15 +20,15 @@ functions:
       - http:
           method: get
           path: hello
-  bye:
-    handler: src/bye.bye
+  lions:
+    handler: src/teams/lions.test
     events:
       - http:
           method: get
-          path: hello 
-  match:
-    handler: src/match.match
+          path: test
+  tigers:
+    handler: src/teams/tigers.players
     events:
       - http:
           method: get
-          path: hello         
+          path: players
